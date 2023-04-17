@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="shortcut-icon.jfif">
+    <link rel="stylesheet" href="styles.css">\
+    <script>
+     function validate(){
+       var name = document.Feedback.name.value;
+       var dateofbirth = document.Feedback.dob.value;
+       var comment = document.Feedback.pwd.value;
+       if(name==""||dateofbirth==""||comment=="")
+       {
+         alert("Fill all the fields")
+       }
+       else{
+         alert("Form submitted successfully")
+       }
+     }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class = "heading">
+        <h1>Mental Wellness Resources</h1>
+      </div>
+      <ul class = "nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="Hotlines.html">Hotlines</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </header>
+    <div class = "content">
+      <form name="Feedback">
+         <fieldset>
+           <legend>For Feedback</legend>
+         <table>
+         <tr>
+           <td><label>Name:</label></td>
+           <td><input type="text" name="name"></td>
+         </tr>
+         <tr>
+           <td><label>DOB:</label></td>
+           <td><input type="date" name="dob"></td>
+         </tr>
+         <tr>
+           <td align="right"><label>Comment:</label></td>
+           <td><input type="comment" name="comment"></td>
+         </tr>
+         <tr>
+           <td colspan="2" align="center"><input type="button" value="Submit" onclick="validate();"></td>
+         </tr>
+         </table>
+       </fieldset>
+       </form>
+</div>
+    <footer>
+      Copyright &copy; Kirsten Saldana
+    </footer>
+  </body>
+
+</html>
